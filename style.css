@@ -1,0 +1,90 @@
+*{
+    --rock: rgb(223, 51, 51);
+    --paper:rgb(7, 11, 240);
+    --scissor:rgba(248, 191, 33, 0.979);
+    --bg-grey:rgba(121, 114, 92, 0.979);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+}
+.rock{
+    color: var(--rock);
+}
+.paper{
+    color: var(--paper);
+}
+.scissor{
+    color: var(--scissor);
+}
+.rules{
+    background-color:var( --bg-grey) ;
+    border-radius: 10px;
+    text-align: left;
+    padding: 8px;
+    color: aliceblue;
+
+}
+.game_UI{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 8rem;
+}
+.computer_Section::after{
+    content: "";
+    position: absolute;
+    border: 5px solid var( --bg-grey);
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
+#gameStart_Btn{
+    color: aliceblue;
+    background-color: rgb(37, 37, 192);
+    border: none;
+    font-size: 3rem;
+    border-radius: 10px;
+    padding: 0 3rem;
+    margin: 3rem;
+}
+#gameStart_Btn:hover{
+    cursor: pointer;
+}
+.playerSelection button{
+    font-size: 6rem;
+    background-color: transparent;
+    margin: 1rem;
+    border: none;
+
+}
+.playerSelection button:hover{
+    cursor: pointer;
+    transform: scale(130%);
+    transition: all 0.5s ease-out;
+    
+}
+.gameHeader_Section button{
+    background-color: transparent;
+    /* border: none; */
+    font-size: 1rem;
+}
+
+.gameHeader_Section button:hover{
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+.hidden{
+display: none;
+}

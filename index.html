@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5b7a223c22.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Brainest Js2</title>
+
+</head>
+<body>
+    <section class="gameHeader_Section">
+        <h1><span class="rock">Rock</span>  <span class="paper">Paper</span> <span class="scissor">Scissor</span></h1>
+        
+        <button id="toggleRulesBtn"> <i class="fa-solid fa-table-list"></i> </button>
+        <div class="hidden">
+            <ul>
+                <li>You will be playing in a game of Rock, Paper and Scissor against the computer</li>
+                <li>You will be playing in a total of 5 rounds</li>
+                <li>Each round will be consist of 1 point and if the round ended in a draw none will have any point</li>
+                <li>After the fifth round, the game will finalize itself, and depend on the final score to declare the winner of the game</li>
+            </ul>
+        </div>
+        <button id="gameStart_Btn">Start</button>
+    </section>
+   
+    <section class="logs">
+        <p>You have won</p>
+    </section>
+
+    <section  class="game_UI">
+        <div class="player_Section">
+            <i class="fa-regular fa-hand-back-fist"></i>
+            <i class="fa-regular fa-hand"></i>
+            <i class="fa-regular fa-hand-scissors"></i>
+        </div>
+
+        <div class="computer_Section">
+            <i class="fa-regular fa-hand-back-fist"></i>
+            <i class="fa-regular fa-hand"></i>
+            <i class="fa-regular fa-hand-scissors"></i>
+        </div>
+    </section>
+    <section class="playerSelection">
+        <h4>Choose Your Next Move</h4>
+        <button><i class="fa-regular fa-hand-back-fist rock"></i></button>
+        <button><i class="fa-regular fa-hand paper"></i></button>
+        <button><i class="fa-regular fa-hand-scissors scissor"></i></button>
+    </section>
+
+</body>
+</html>
