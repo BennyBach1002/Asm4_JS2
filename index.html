@@ -12,42 +12,43 @@
 </head>
 <body>
     <section class="gameHeader_Section">
-        <h1><span class="rock">Rock</span>  <span class="paper">Paper</span> <span class="scissor">Scissor</span></h1>
-        
-        <button id="toggleRulesBtn"> <i class="fa-solid fa-table-list"></i> </button>
-        <div class="hidden">
+        <div class="header">
+            <h1><span class="rock">Rock</span>  <span class="paper">Paper</span> <span class="scissor">Scissor</span></h1>
+            <button id="toggleRulesBtn"> <i class="fa-solid fa-table-list"></i> </button>
+        </div>
+        <div class="rules" style="display: none;">
             <ul>
-                <li>You will be playing in a game of Rock, Paper and Scissor against the computer</li>
+                <li>You will be playing in a game of Rock, Paper and Scissor against the computer</li> 
                 <li>You will be playing in a total of 5 rounds</li>
                 <li>Each round will be consist of 1 point and if the round ended in a draw none will have any point</li>
                 <li>After the fifth round, the game will finalize itself, and depend on the final score to declare the winner of the game</li>
+                <li>*The logs will help you with the game flow</li>
             </ul>
         </div>
         <button id="gameStart_Btn">Start</button>
     </section>
    
     <section class="logs">
-        <p>You have won</p>
+        <div class="log">
+            <p id="time"></p>
+            <p id="roundResult">You have won</p>
+        </div>  
     </section>
-
+    
     <section  class="game_UI">
         <div class="player_Section">
-            <i class="fa-regular fa-hand-back-fist"></i>
-            <i class="fa-regular fa-hand"></i>
-            <i class="fa-regular fa-hand-scissors"></i>
+         <p>Player</p>
         </div>
 
         <div class="computer_Section">
-            <i class="fa-regular fa-hand-back-fist"></i>
-            <i class="fa-regular fa-hand"></i>
-            <i class="fa-regular fa-hand-scissors"></i>
+         <p>Computer</p>
         </div>
     </section>
     <section class="playerSelection">
         <h4>Choose Your Next Move</h4>
-        <button><i class="fa-regular fa-hand-back-fist rock"></i></button>
-        <button><i class="fa-regular fa-hand paper"></i></button>
-        <button><i class="fa-regular fa-hand-scissors scissor"></i></button>
+        <button id="rock_Btn" disabled><i class="fa-regular fa-hand-back-fist rock"></i></button>
+        <button id="paper_Btn" disabled><i class="fa-regular fa-hand paper"></i></button>
+        <button id="scissor_Btn" disabled><i class="fa-regular fa-hand-scissors scissor"></i></button>
     </section>
 
 </body>

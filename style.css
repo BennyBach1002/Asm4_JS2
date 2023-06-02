@@ -7,11 +7,13 @@
 body{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: beige;
     margin: auto;
     box-sizing: border-box;
     align-items: center;
     text-align: center;
+    height: 100vh;
 }
 .rock{
     color: var(--rock);
@@ -22,20 +24,24 @@ body{
 .scissor{
     color: var(--scissor);
 }
-.rules{
-    background-color:var( --bg-grey) ;
-    border-radius: 10px;
-    text-align: left;
-    padding: 8px;
-    color: aliceblue;
-
-}
 .game_UI{
     display: flex;
     position: relative;
     justify-content: space-around;
     width: 100%;
-    font-size: 8rem;
+    font-size: 3rem;
+}
+.game_UI i{
+    font-size: 7rem;
+    text-align: center;
+    align-self: center;
+}
+.player_Section{
+    width: 50%;
+}
+.computer_Section{
+    justify-content: center;
+    width: 50%;
 }
 .computer_Section::after{
     content: "";
@@ -72,6 +78,9 @@ body{
     transition: all 0.5s ease-out;
     
 }
+.gameHeader_Section{
+    /* position: relative; */
+}
 .gameHeader_Section button{
     background-color: transparent;
     /* border: none; */
@@ -81,10 +90,48 @@ body{
 .gameHeader_Section button:hover{
     cursor: pointer;
 }
-
-.hide{
-    display: none;
+.header{
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
 }
-.hidden{
-display: none;
+#toggleRulesBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    
+}
+#toggleRulesBtn button:hover{
+    cursor: pointer;
+}
+.rules{
+    background-color:var( --bg-grey) ;
+    border-radius: 10px;
+    text-align: left;
+    padding: 8px;
+    color: aliceblue;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 50px;
+    z-index: 10;
+}
+ .logs{
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    width: 500px;
+    height: 100px;
+    color: aliceblue;
+    background-color: var(--bg-grey);
+    overflow-y:scroll;
+    border-radius: 8px;
+}
+.log{
+    display: flex;
+    justify-content: space-evenly;
+}
+#time{
+    color: rgb(184, 176, 176);
 }
