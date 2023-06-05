@@ -1,137 +1,58 @@
 *{
-    --rock: rgb(223, 51, 51);
-    --paper:rgb(7, 11, 240);
-    --scissor:rgba(248, 191, 33, 0.979);
-    --bg-grey:rgba(121, 114, 92, 0.979);
+    margin: 0;
+    padding: 0;
 }
 body{
+    background-color: gray;
+    font-size: x-large;
+}
+
+.Calculator{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: beige;
-    margin: auto;
-    box-sizing: border-box;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-}
-.rock{
-    color: var(--rock);
-}
-.paper{
-    color: var(--paper);
-}
-.scissor{
-    color: var(--scissor);
-}
-.game_UI{
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    width: 100%;
-    font-size: 3rem;
-}
-.game_UI i{
-    font-size: 7rem;
-    text-align: center;
-    align-self: center;
-}
-.player_Section{
-    width: 50%;
-}
-.computer_Section{
-    justify-content: center;
-    width: 50%;
-}
-.computer_Section::after{
-    content: "";
-    position: absolute;
-    border: 5px solid var( --bg-grey);
-    border-radius: 10px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-}
-#gameStart_Btn{
-    color: aliceblue;
-    background-color: rgb(37, 37, 192);
-    border: none;
-    font-size: 3rem;
-    border-radius: 10px;
-    padding: 0 3rem;
-    margin: 3rem;
-}
-#gameStart_Btn:hover{
-    cursor: pointer;
-}
-.playerSelection button{
-    font-size: 6rem;
-    background-color: transparent;
-    margin: 1rem;
-    border: none;
-
-}
-.playerSelection button:hover{
-    cursor: pointer;
-    transform: scale(130%);
-    transition: all 0.5s ease-out;
-    
-}
-.gameHeader_Section{
-    /* position: relative; */
-}
-.gameHeader_Section button{
-    background-color: transparent;
-    /* border: none; */
-    font-size: 1rem;
-}
-
-.gameHeader_Section button:hover{
-    cursor: pointer;
-}
-.header{
-    display: flex;
-    align-self: center;
-    justify-content: space-around;
-}
-#toggleRulesBtn{
-    background-color: transparent;
-    border: none;
-    font-size: 1.3rem;
-    
-}
-#toggleRulesBtn button:hover{
-    cursor: pointer;
-}
-.rules{
-    background-color:var( --bg-grey) ;
-    border-radius: 10px;
-    text-align: left;
-    padding: 8px;
-    color: aliceblue;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 50px;
-    z-index: 10;
-}
- .logs{
-    position: fixed;
-    top: 1%;
-    left: 1%;
+    background-color: rgb(119, 98, 98);
+    margin:  5rem auto;
     width: 500px;
-    height: 100px;
-    color: aliceblue;
-    background-color: var(--bg-grey);
-    overflow-y:scroll;
+    height: 700px;
     border-radius: 8px;
 }
-.log{
+.screen_Container{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aliceblue;
+    margin: .5rem auto;
+    /* padding: 0 .5rem; */
+    text-align:end;
+    width: 95%;
+    height: 15%;
+    border-radius: 5px;
 }
-#time{
-    color: rgb(184, 176, 176);
+
+.buttons_Container{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    height:80%;
+    width: 95%;
+}
+
+.buttons_Container button{
+    width: 25%;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.buttons_Container button:nth-child(17){
+    width: 50%;
+}
+
+.blue{
+    background-color: rgb(54, 153, 184);
+}
+.Yellow{
+    background-color: rgba(255, 155, 6, 0.644);
+}
+.green{
+    background-color: rgb(39, 197, 39);
 }

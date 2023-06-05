@@ -8,48 +8,34 @@
     <script src="https://kit.fontawesome.com/5b7a223c22.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Brainest Js2</title>
-
 </head>
 <body>
-    <section class="gameHeader_Section">
-        <div class="header">
-            <h1><span class="rock">Rock</span>  <span class="paper">Paper</span> <span class="scissor">Scissor</span></h1>
-            <button id="toggleRulesBtn"> <i class="fa-solid fa-table-list"></i> </button>
+    <section class="Calculator">
+        <div class="screen_Container">
+            <p id="myFormula">10+2</p>
+            <h4 id="result"></h4>
         </div>
-        <div class="rules" style="display: none;">
-            <ul>
-                <li>You will be playing in a game of Rock, Paper and Scissor against the computer</li> 
-                <li>You will be playing in a total of 5 rounds</li>
-                <li>Each round will be consist of 1 point and if the round ended in a draw none will have any point</li>
-                <li>After the fifth round, the game will finalize itself, and depend on the final score to declare the winner of the game</li>
-                <li>*The logs will help you with the game flow</li>
-            </ul>
-        </div>
-        <button id="gameStart_Btn">Start</button>
-    </section>
-   
-    <section class="logs">
-        <div class="log">
-            <p id="time"></p>
-            <p id="roundResult">You have won</p>
-        </div>  
-    </section>
-    
-    <section  class="game_UI">
-        <div class="player_Section">
-         <p>Player</p>
-        </div>
-
-        <div class="computer_Section">
-         <p>Computer</p>
+        <div class="buttons_Container">
+            <button class="blue" value="reset" id="reset">AC</button>
+            <button class="blue" value="sign" id="sign">+/-</button>
+            <button class="blue" value="percent" id="percent">%</button>
+            <button class="green equationBtn" value="/" id="divide">/</button>
+            <button class="Yellow numberBtn" value="7" id="7" >7</button>
+            <button class="Yellow numberBtn" value="8" id="8" >8</button>
+            <button class="Yellow numberBtn" value="9" id="9" >9</button>
+            <button class="green equationBtn" value="*" id="multi">*</button>
+            <button class="Yellow numberBtn" value="4" id="4" >4</button>
+            <button class="Yellow numberBtn" value="5" id="5" >5</button>
+            <button class="Yellow numberBtn" value="6" id="6" >6</button>
+            <button class="green equationBtn"class="green" value="-" id="minus">-</button>
+            <button class="Yellow numberBtn" value="1" id="1" >1</button>
+            <button class="Yellow numberBtn" value="2" id="2" >2</button>
+            <button class="Yellow numberBtn" value="3" id="3" >3</button>
+            <button class="green equationBtn" value="+" id="plus">+</button>
+            <button class="Yellow numberBtn" value="0" id="0" >0</button>
+            <button class="Yellow" value="dot" id="dot">.</button>
+            <button class="green equationBtn" value="=" id="equal">=</button>
         </div>
     </section>
-    <section class="playerSelection">
-        <h4>Choose Your Next Move</h4>
-        <button id="rock_Btn" disabled><i class="fa-regular fa-hand-back-fist rock"></i></button>
-        <button id="paper_Btn" disabled><i class="fa-regular fa-hand paper"></i></button>
-        <button id="scissor_Btn" disabled><i class="fa-regular fa-hand-scissors scissor"></i></button>
-    </section>
-
 </body>
 </html>
