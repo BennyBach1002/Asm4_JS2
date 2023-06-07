@@ -19,16 +19,14 @@ body{
 .screen_Container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: aliceblue;
     margin: .5rem auto;
-    /* padding: 0 .5rem; */
-    text-align:end;
+    justify-content: center;
     width: 95%;
     height: 15%;
     border-radius: 5px;
+    text-align:right;
 }
-
 .buttons_Container{
     display: flex;
     margin: auto;
@@ -42,9 +40,6 @@ body{
     border-radius: 8px;
     font-weight: bolder;
     font-size: 20px;
-}
-.buttons_Container button:nth-child(17){
-    width: 50%;
 }
 
 .blue{
