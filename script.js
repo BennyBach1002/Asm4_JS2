@@ -58,6 +58,7 @@ dot_Btn.addEventListener("click", dotified)
 const btn_Reset = document.getElementById('reset');
 const resetScreen = () => {
     resultScreen.innerText = ""
+    myFormula.innerText = ""
     formulaArray = [];
     answerArray = []
 };
